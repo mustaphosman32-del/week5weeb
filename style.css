@@ -1,0 +1,123 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+}
+
+/* Header */
+.header {
+    background-color: #123c35;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.header h1 {
+    margin: 0 0 10px;
+    font-size: 36px;
+}
+
+.header p {
+    margin: 0;
+}
+
+/* Main content */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.welcome,
+.instructions {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.welcome {
+    text-align: center;
+}
+
+.welcome h2,
+.instructions h2 {
+    color: #123c35;
+}
+
+/* Button */
+button {
+    background-color: #16866a;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+button:hover {
+    background-color: #10664f;
+}
+
+/* Budget cards using CSS Grid */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 12px;
+    border-left: 5px solid #16866a;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+    font-size: 16px;
+    color: #52645f;
+}
+
+.card p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #123c35;
+    overflow-wrap: anywhere;
+}
+
+.instructions li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background-color: #123c35;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Responsive layout for phones */
+@media (max-width: 650px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+}

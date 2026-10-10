@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>SpendWise</h1>
+        <p>Track your budget. Control your spending.</p>
+    </header>
+
+    <main class="container">
+        <section class="welcome">
+            <h2>My Budget Dashboard</h2>
+            <p>Manage your money by entering your budget and expenses.</p>
+            <button id="calculateBtn">Enter Budget and Calculate</button>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Total Budget</h3>
+                <p id="budget">KSh 0.00</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Expenses</h3>
+                <p id="expenses">KSh 0.00</p>
+            </div>
+
+            <div class="card">
+                <h3>Remaining Balance</h3>
+                <p id="balance">KSh 0.00</p>
+            </div>
+        </section>
+
+        <section class="instructions">
+            <h2>How to use SpendWise</h2>
+            <ol>
+                <li>Click the Enter Budget and Calculate button.</li>
+                <li>Enter your total budget when prompted.</li>
+                <li>Enter your expenses one by one.</li>
+                <li>View your results on the dashboard.</li>
+                <li>Open the browser console to see labeled results.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SpendWise Budget Tracker</p>
+    </footer>
+</body>
+</html>
